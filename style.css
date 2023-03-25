@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
-.date, .time {
+* {
   font-family: "Roboto Condensed", sans-serif;
+}
+
+body .newQuotes, body .quotes, body main .time, body main .date {
   color: whitesmoke;
-  text-shadow: 2px 2px rgb(102, 102, 102);
+  text-shadow: 3px 3px rgb(102, 102, 102);
   opacity: 65%;
   font-size: 80px;
   font-weight: 600px;
 }
 
-main, .bgVideo {
+body main, body .bgVideo {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -17,24 +20,71 @@ main, .bgVideo {
 body {
   margin: 0;
 }
-
-.bgVideo {
+body .bgVideo {
   top: 0;
   left: 0;
   object-fit: cover;
 }
-
-main {
+body main {
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.date {
+body main .date {
   display: flex;
   font-size: 30px;
+}
+body .quotes {
+  position: relative;
+  font-size: 50px;
+}
+body .quotes .quotesAddBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  color: rgb(37, 35, 37);
+  font-size: 20px;
+  border: 0px;
+  display: none;
+  font-weight: bold;
+}
+body .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+body .quotes:hover .quotesMsg {
+  opacity: 50%;
+}
+body .newQuotes {
+  display: none;
+}
+body .newQuotes .newQuotesInput {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 5px solid rgb(255, 255, 255);
+  font-size: 30px;
+  width: 400px;
+  color: white;
+  outline: none;
+}
+body .newQuotes .newQuotesBtn {
+  background-color: transparent;
+  font-size: 30px;
+  color: white;
+  border: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(37, 35, 37);
+  font-weight: bold;
+  border-radius: 10px;
+}
+body .newQuotes .newQuotesBtn:hover {
+  scale: 1.1;
 }
 
 /*# sourceMappingURL=style.css.map */
