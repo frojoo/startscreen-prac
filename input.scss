@@ -49,6 +49,7 @@ body {
     position: relative;
     @extend %font;
     font-size: 50px;
+    color: black;
 
     .quotesAddBtn {
       position: absolute;
@@ -59,7 +60,7 @@ body {
       height: 35px;
       background-color: rgb(255, 255, 255);
       border-radius: 10px;
-      color: rgb(37, 35, 37);
+      color: rgb(57, 52, 57);
       font-size: 20px;
       border: 0px;
       display: none;

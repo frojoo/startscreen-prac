@@ -12,6 +12,7 @@ function getDate() {
   date.innerText = `${years}.${month}.${days} ${today}`;
 }
 getDate();
+setInterval(getDate, 1000);
 
 function getTime() {
   const time = document.querySelector(".time");
