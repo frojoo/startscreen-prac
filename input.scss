@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+%font {
+  font-family: "Roboto Condensed", sans-serif;
+  color: whitesmoke;
+  text-shadow: 2px 2px rgb(102, 102, 102);
+  opacity: 65%;
+  font-size: 80px;
+  font-weight: 600px;
+}
+
+%fix_size {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.bgVideo {
+  @extend %fix_size;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+main {
+  z-index: 2;
+  @extend %fix_size;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  @extend %font;
+}
+
+.date {
+  display: flex;
+  @extend %font;
+  font-size: 30px;
+}
