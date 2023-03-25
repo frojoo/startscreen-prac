@@ -23,11 +23,11 @@ function getTime() {
   const seconds = String(newDate.getSeconds()).padStart(2, "0");
   const days = newDate.getDay();
 
-  if (Number(hours) >= 12) {
-    if (Number(hours) >= 13) {
-      hours = String(hours - 12).padStart(2, "0");
-    }
+  if (Number(hours) > 12) {
+    hours = String(hours - 12).padStart(2, "0");
     time.innerText = `${hours}:${minutes}:${seconds} PM`;
+  } else if (Number(hours) == 0) {
+    time.innerText = `12:${minutes}:${seconds} AM`;
   } else {
     time.innerText = `${hours}:${minutes}:${seconds} AM`;
   }
